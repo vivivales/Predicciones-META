@@ -45,9 +45,6 @@ Una de las ventajas de este modelo es su capacidad de separar las señales de un
 
 
 # 3.	CONCLUSIONES
-      MARS	LSTM	SKForecaster	SSA
-RMSE	 5,49	5,89	   6,31     	8,48
-MAE	   4,3	5,06	   5,08	     7,07
 
 El modelo que presentó un mejor desempeño en relación con las métricas de desempeño calculadas para todos fue el modelo MARS. Al ser una serie que tiene un alto nivel de linealidad y baja entropía, los modelos paramétricos tipo Model Based pueden capturar muy bien los patrones de la serie. Adicionalmente, no sacrifican la interpretabilidad y logran buenos desempeños. El modelo MARS además por su alta flexibilidad y eficiencia computacional, logró ajustarse muy fácilmente al conjunto de datos. 
 Las redes neuronales, por su capacidad adaptativa pueden también presentar un muy buen desempeño, como vemos fue el segundo modelo en ranking con mejor desempeño. Sin embargo, la limitación que teníamos con los parámetros del modelo no permitió revisar si era posible alcanzar un mejor desempeño en este tipo de modelos. El SKForecaster es un modelo que funciona muy bien cuando tiene información de variables exógenas, en este caso, la única variable con la que contábamos eran los precios de la acción. Y en cuanto al SSA, la definición manual de los parámetros y el criterio del analista quizás puede sesgar un poco el resultado por la selección de vectores que conforman la estacionalidad y tendencia, para la reconstrucción de la serie.
