@@ -29,21 +29,6 @@ Con esta información entrenamos el modelo y obtenemos un desempeño con un RMSE
 Una de las ventajas de este modelo es su capacidad de separar las señales de una series de tiempo identificando su tendencia y estacionalidad de manera separada. Adicionalmente, no requiere estacionareidad y es muy fácil de impelmentar. Aprovechando esta ventaja, se aplica a la serie de META y se transforman los datos a formato ts. Observando en el scree plot, se puede ver un decaimiento de los log-valores singulares hasta el número 12. Adicionalmente, la tendencia puede estar representada por los vectores 1 al 3, aunque el primer componente es el que aporta la mayor parte de la variación (para la tendencia). Los pares de vectores que se usaron para explicar la estacionalidad fueron los 8 y 9 y 10 y 11 respectivamente.
  Al reconstruir la serie obtenemos el gráfico del lado derecho que nos muestra su comportamiento en las predicciones con un RMSE de 8.3 y un MAE de 7.02. Una de las desventajas que tiene este modelo es que es muy sensible al ruido. Además, la selección de parámetros debe hacerse de manera manual lo cual implica que debe seleccionarse cuidadosamente los parámetros a asignar en especial para reconstruir la serie en su tendencia y estacionalidad.
 
-## 2.	PREDICCIONES A 10 DÍAS
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 3.	CONCLUSIONES
 
 El modelo que presentó un mejor desempeño en relación con las métricas de desempeño calculadas para todos fue el modelo MARS. Al ser una serie que tiene un alto nivel de linealidad y baja entropía, los modelos paramétricos tipo Model Based pueden capturar muy bien los patrones de la serie. Adicionalmente, no sacrifican la interpretabilidad y logran buenos desempeños. El modelo MARS además por su alta flexibilidad y eficiencia computacional, logró ajustarse muy fácilmente al conjunto de datos. 
